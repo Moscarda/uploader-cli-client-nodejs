@@ -1,6 +1,6 @@
 {
   "name": "upclient",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Command-line client to the upload pastebin",
   "main": "upclient.js",
   "preferGlobal": "true",
