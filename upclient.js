@@ -129,7 +129,7 @@ function doUpload(data, name, type) {
 	formdata.append('file', result.encrypted, {filename: 'file', contentType: 'text/plain'})
 
 	var req = https.request({
-	    host: 'up1.ca',
+	    host: 'paste.antagonismo.org',
 	    port: 443,
 	    path: '/up',
 	    method: 'POST',
@@ -149,7 +149,7 @@ function doUpload(data, name, type) {
 		data_out += chunk;
 	    });
 	    res.on('end', function() {
-		var res_url = "https://up1.ca/#"+result.seed;
+		var res_url = "https://paste.antagonismo.org/#"+result.seed;
 		console.log(res_url);
 	    });
 	});
