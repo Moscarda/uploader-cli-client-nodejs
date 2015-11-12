@@ -1,13 +1,20 @@
 {
   "name": "apaste",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Command-line client for riseup.net pastebin service",
   "main": "upclient.js",
   "preferGlobal": "true",
+  "homepage": "https://share.riseup.net",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/riseup/up1-cli-client-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/riseup/up1-cli-client-nodejs/issues"
+  },
   "bin": {
     "apaste": "upclient.js"
   },
-  "author": "guido",
   "dependencies": {
     "form-data": "*",
     "mime": "*",
@@ -17,5 +24,17 @@
   },
   "engines": {
     "node": "*"
-  }
+  },
+  "author": "guido",
+  "contributors": [
+    {
+      "name": "Keith M",
+      "email": null,
+      "url": "https://github.com/k3d3",
+      "contributions": 12,
+      "additions": 258,
+      "deletions": 32,
+      "hireable": null
+    }
+  ]
 }

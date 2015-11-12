@@ -13,7 +13,7 @@ var S = require('string');
 S.extendPrototype();
 
 var argv = cli
-	.name('up')
+	.name('apaste')
 	.version('0.1')
 	.usage('[options] [files]')
 	.description('Upload files and text to an Up1 based pastebin. If no argument is specified, stdin is assumed.')
