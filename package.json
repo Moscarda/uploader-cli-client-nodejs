@@ -1,7 +1,7 @@
 {
   "name": "apaste",
-  "version": "1.0.0",
-  "description": "Command-line client to the upload pastebin",
+  "version": "1.1.0",
+  "description": "Command-line client for riseup.net pastebin service",
   "main": "upclient.js",
   "preferGlobal": "true",
   "bin": {

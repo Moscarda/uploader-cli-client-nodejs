@@ -124,12 +124,12 @@ function doUpload(data, name, type) {
 
 
 	var formdata = new FormData()
-	formdata.append('api_key', 'c61540b5ceecd05092799f936e27755f')
+	formdata.append('api_key', '59Mnk5nY6eCn4bi9GvfOXhMH54E7Bh6EMJXtyJfs')
 	formdata.append('ident', result.ident)
 	formdata.append('file', result.encrypted, {filename: 'file', contentType: 'text/plain'})
 
 	var req = https.request({
-	    host: 'paste.antagonismo.org',
+	    host: 'share.riseup.net',
 	    port: 443,
 	    path: '/up',
 	    method: 'POST',
@@ -149,7 +149,7 @@ function doUpload(data, name, type) {
 		data_out += chunk;
 	    });
 	    res.on('end', function() {
-		var res_url = "https://paste.antagonismo.org/#"+result.seed;
+		var res_url = "https://share.riseup.net/#"+result.seed;
 		console.log(res_url);
 	    });
 	});
